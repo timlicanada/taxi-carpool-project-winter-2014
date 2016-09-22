@@ -1,0 +1,155 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.jeremy.carpoolcontroller.RegistrationPage">
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Register"
+    android:id="@+id/textViewLable1"
+    android:gravity="center"
+    android:textSize="28dp"
+    android:layout_alignBottom="@+id/buttonStartMenu"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_alignTop="@+id/buttonStartMenu" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Username"
+    android:id="@+id/textView"
+    android:layout_below="@+id/textViewLable1"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="40dp"
+    android:layout_alignRight="@+id/textView2"
+    android:layout_alignEnd="@+id/textView2" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Password"
+    android:id="@+id/textView2"
+    android:layout_below="@+id/textView"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="33dp"
+    android:layout_alignRight="@+id/textView3"
+    android:layout_alignEnd="@+id/textView3" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Re-Enter Password"
+    android:id="@+id/textView3"
+    android:layout_below="@+id/textView2"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="33dp"
+    android:layout_alignRight="@+id/textView4"
+    android:layout_alignEnd="@+id/textView4" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="First Name"
+    android:id="@+id/textView4"
+    android:layout_below="@+id/textView3"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="34dp" />
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textAppearance="?android:attr/textAppearanceLarge"
+    android:text="Last Name"
+    android:id="@+id/textView5"
+    android:layout_below="@+id/textView4"
+    android:layout_alignParentLeft="true"
+    android:layout_alignParentStart="true"
+    android:layout_marginTop="34dp" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:id="@+id/editTextUserName"
+    android:layout_alignTop="@+id/textView"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:ems="10"
+    android:id="@+id/editTextPass1"
+    android:layout_alignTop="@+id/textView2"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPassword"
+    android:ems="10"
+    android:id="@+id/editTextPass2"
+    android:layout_alignTop="@+id/textView3"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:layout_above="@+id/textView4" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:id="@+id/editTextName1"
+    android:layout_alignTop="@+id/textView4"
+    android:layout_alignLeft="@+id/editTextPass2"
+    android:layout_alignStart="@+id/editTextPass2" />
+
+<EditText
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:inputType="textPersonName"
+    android:ems="10"
+    android:id="@+id/editTextName2"
+    android:layout_alignTop="@+id/textView5"
+    android:layout_alignLeft="@+id/editTextName1"
+    android:layout_alignStart="@+id/editTextName1" />
+
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Register"
+    android:id="@+id/buttonRegister"
+    android:layout_alignParentBottom="true"
+    android:layout_centerHorizontal="true"
+    android:onClick="buttonRegisterClick" />
+
+<Button
+    style="?android:attr/buttonStyleSmall"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Login Menu"
+    android:id="@+id/buttonStartMenu"
+    android:layout_toEndOf="@+id/buttonRegister"
+    android:layout_alignParentTop="true"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true"
+    android:onClick="buttonStartMenuClick" />
+
+</RelativeLayout>

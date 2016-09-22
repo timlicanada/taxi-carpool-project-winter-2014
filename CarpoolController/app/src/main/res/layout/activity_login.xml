@@ -1,0 +1,58 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="mcmaster.tli.operationcontroller.LoginActivity">
+
+    <TextView android:text="Log in to continue:" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/promptText"
+        android:textSize="25dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Username here"
+        android:ems="10"
+        android:id="@+id/editText"
+        android:layout_marginTop="104dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_centerVertical="true"
+        android:layout_alignStart="@+id/editText"
+        android:text="Password here" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Log in"
+        android:id="@+id/button2"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="60dp"
+        android:nestedScrollingEnabled="false"
+        android:onClick="loginAttempt" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:id="@+id/button3"
+        android:layout_below="@+id/editText2"
+        android:layout_marginTop="120dp"
+        android:nestedScrollingEnabled="false"
+        android:onClick="registerButton" />
+
+
+
+</RelativeLayout>
